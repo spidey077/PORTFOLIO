@@ -160,6 +160,11 @@ body {
     height:40px;
     border-radius: 80%;
     border: 2px solid rgba(255, 255, 255, 0.7);
+    text-shadow: 
+    0px 0px 8px rgba(255, 255, 255, 0.8), /* Cyan glow */
+    0px 0px 15px rgba(248, 248, 248, 0.8), /* Larger glow */
+    0px 0px 25px rgba(255, 255, 255, 0.8), /* More intense glow */
+    0px 0px 40px rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,10 +180,10 @@ body {
     font-size:30px;
     color: white;
     text-shadow: 
-    0px 0px 8px rgba(0, 255, 255, 0.8), /* Cyan glow */
-    0px 0px 15px rgba(0, 255, 255, 0.8), /* Larger glow */
-    0px 0px 25px rgba(0, 255, 255, 0.8), /* More intense glow */
-    0px 0px 40px rgba(0, 255, 255, 0.8); /* Extreme glow */
+    0px 0px 8px rgba(255, 255, 255, 0.8), /* Cyan glow */
+    0px 0px 15px rgba(248, 248, 248, 0.8), /* Larger glow */
+    0px 0px 25px rgba(255, 255, 255, 0.8), /* More intense glow */
+    0px 0px 40px rgba(255, 255, 255, 0.8); /* Extreme glow */
     transform: rotate(180deg);  /* Rotates the arrow 180 degrees */
 }
 /* Disappear effect when scrolling */
@@ -333,12 +338,17 @@ body {
     }
 
     .welcome-section-item2 h1 {
-        line-height:70px;
+        line-height:60px;
         padding-top: 30px;
         margin-top:10px;
+        font-size:40px;
     }
  .welcome-section-item1{
     margin-top: -40px;
+    font-size:24px;
+ }
+ video{
+    display: none;
  }
     #navbar{
         display: none;
