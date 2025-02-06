@@ -292,7 +292,9 @@ body {
         height: 230px;
         padding-top: 30px;
     }
-
+  .project-tile p{
+    display: none;
+  }
     .welcome-section-item2 h1 {
         line-height:60px;
         padding-top: 30px;
