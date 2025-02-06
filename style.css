@@ -29,6 +29,16 @@ body {
 }
 
 /* Modern Hamburger Menu */
+
+.hamburger-menu.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.hamburger-menu:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
 .hamburger-menu {
     position: fixed;
     top: 20px;
@@ -45,14 +55,9 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-.hamburger-menu:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Hamburger Bars */
 .hamburger-menu .bar {
-    width: 35px;
-    height: 4px;
+    width:25px;  /* Increased width for better alignment */
+    height:2px;  /* Increased height for better visibility */
     background-color: white;
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
@@ -60,16 +65,18 @@ body {
 
 /* Hamburger Animation */
 .hamburger-menu.active .bar:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);  /* Adjusted for better symmetry */
 }
 
 .hamburger-menu.active .bar:nth-child(2) {
-    opacity: 0;
+    opacity: 0;  /* Middle bar fades out */
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);  /* Adjusted for perfect alignment */
 }
+
+
 
 /* Menu Items - Modern Look */
 .off-screen-menu ul {
@@ -95,62 +102,6 @@ body {
 .off-screen-menu a:hover {
     color: cyan;
     transform: scale(1.05);
-}
-
-
-
-.scroll-top {
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background:transparent;
-    border: 2px solid rgba(0, 247, 255, 0.7);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
-    animation: pulse 1.5s infinite;
-}
-
-.scroll-top::before {
-    content: "^"; /* Unicode for an up arrow */
-    font-size:17px;
-    color: rgb(129, 175, 171);
-    text-shadow: 
-    0px 0px 8px rgba(0, 255, 255, 0.8), 
-    0px 0px 15px rgba(0, 255, 255, 0.8),
-    0px 0px 25px rgba(0, 255, 255, 0.8),
-    0px 0px 40px rgba(0, 255, 255, 0.8);
-    animation: up 1.5s infinite;
-}
-
-@keyframes up{
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-/* Show when scrolling down */
-.show-scroll {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Hide effect when not scrolling */
-.hidden {
-    opacity: 0;
-    transform: translateY(20px);
 }
 
 .scroll-indicator {
@@ -208,7 +159,7 @@ body {
         height: 230px;
         padding-top: 30px;
     }
-
+    
     @keyframes typing {
         0% {
             width: 0%;
@@ -249,11 +200,16 @@ body {
         border-right: 6px solid rgba(255, 255, 255);
         animation: typing 6s 1s steps(60) both infinite, blink 1s infinite;
     }
-
+  .welcome-section-item1
+    {
+        margin-top:250px;
+        font-size:40px;
+    }
     .welcome-section-item3 {
         max-width: 800px;
         margin: auto;
-    }
+        font-weight:550;
+  }
 
     .box1,
     .box2 {
