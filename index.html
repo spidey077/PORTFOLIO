@@ -57,7 +57,7 @@
         <div class="bar"></div>
     </div>
     <div class="polygon"
-        style=" position: relative;background-color: rgb(22, 22, 22);padding-top: 60px; height:1000px;margin-bottom:40px;">
+        style=" position: relative;background-color: rgb(22, 22, 22);padding-top: 60px; height:1050px;margin-bottom:40px;">
 
         <div class="fade-In" id="welcome-section">
             <div>
@@ -169,7 +169,6 @@
         </div>
 
     </div>
-    <button id="scrollToTop" class="scroll-top"></button>
     <div class="cursor"></div>
     <script>
 
@@ -203,32 +202,32 @@
         });
 
 
-        window.addEventListener("scroll", function () {
-            let scrollToTopp = document.getElementById("scrollToTop");
-            if (window.scrollY >1400) {
-                scrollToTop.classList.add("show-scroll");
-            } else {
-                scrollToTop.classList.remove("show-scroll");
-            }
-        });
-        document.getElementById("scrollToTop").addEventListener("click", function () {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
         document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger-menu");
     const menu = document.querySelector(".off-screen-menu");
 
+    // Toggle menu on hamburger click
     hamburger.addEventListener("click", function () {
         menu.classList.toggle("show-menu");
         hamburger.classList.toggle("active");
     });
 
-    // Optional: Close menu when clicking outside
+    // Close menu when clicking outside
     document.addEventListener("click", function (event) {
         if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
             menu.classList.remove("show-menu");
             hamburger.classList.remove("active");
+        }
+    });
+
+    // Hide hamburger smoothly when scrolling down 300px
+    window.addEventListener("scroll", function () {
+        const scrollY = window.scrollY || window.pageYOffset; // Ensure compatibility
+
+        if (scrollY >950) {  
+            hamburger.classList.add("hidden"); // Hide without squeezing
+        } else {
+            hamburger.classList.remove("hidden"); // Show again
         }
     });
 });
