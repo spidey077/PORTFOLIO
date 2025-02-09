@@ -6,8 +6,7 @@ window.addEventListener("scroll", function () {
     } else {
         scrollIndicator.classList.remove("hidden");
     }
-}
-);
+});
 document.getElementById("scrollIndicator").addEventListener("click", function () {
     window.scrollTo({ top: 1050, behavior: "smooth" });
 });
@@ -16,46 +15,41 @@ document.getElementById("scrollIndicator").addEventListener("click", function ()
 window.addEventListener("load", function () {
     const loadingScreen = document.getElementById("loading-screen");
     const content = document.getElementById("content");
-
-    // Ensure the loading screen is fully visible until everything is loaded
     setTimeout(() => {
-        loadingScreen.classList.add("hide"); // Hide loading screen
-
-        // Show main content only after loading screen fades out
+        loadingScreen.classList.add("hide");
         setTimeout(() => {
             content.classList.add("show");
-        }, 1000); // 1s delay to ensure smooth transition
-    }, 500); // 0.5s delay to prevent flicker
+        }, 1000);
+    }, 500);
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
 const hamburger = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".off-screen-menu");
-
-// Toggle menu on hamburger click
-hamburger.addEventListener("click", function () {
-menu.classList.toggle("show-menu");
-hamburger.classList.toggle("active");
+document.addEventListener("click", function () {
+    menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
 });
-
-// Close menu when clicking outside
 document.addEventListener("click", function (event) {
-if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-    menu.classList.remove("show-menu");
-    hamburger.classList.remove("active");
-}
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove("active");
+        hamburger.classList.remove("active");
+    }
 });
 
-// Hide hamburger smoothly when scrolling down 300px
+const navbar=document.getElementById("navbar");
 window.addEventListener("scroll", function () {
-const scrollY = window.scrollY || window.pageYOffset; // Ensure compatibility
+    let scrollY = window.scrollY;
+    if (scrollY > 950) {
+        hamburger.classList.add("hidden");
+        navbar.classList.add("hidden");
+    } else {
+        hamburger.classList.remove("hidden");
+        navbar.classList.remove("hidden");
+    }
+});
 
-if (scrollY >950) {  
-    hamburger.classList.add("hidden"); // Hide without squeezing
-} else {
-    hamburger.classList.remove("hidden"); // Show again
-}
-});
-});
+
+
 
