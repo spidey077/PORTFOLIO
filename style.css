@@ -374,7 +374,7 @@ body {
    
     }
     .polygon,#social-link{
-        padding-right:30px;
+        width: 100%;
     }
     
 }
