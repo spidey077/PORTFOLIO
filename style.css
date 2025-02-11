@@ -351,8 +351,9 @@ body {
     }
 
     .welcome-section-item3 {
-        width: 70%;
+        width:80%;
         margin: auto;
+        margin-top: -20px;
     }
 
     video {
