@@ -205,7 +205,7 @@ body {
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 88%, 0 100%, 0% 60%, 0 0);
     }
     .project-image{
-        opacity: 0.8;
+        opacity: 0.83;
         transition: transform 0.5s ease, opacity 0.5s ease;
     }
     .project-tile h2 {
@@ -280,6 +280,7 @@ body {
         max-width: 800px;
         margin: auto;
         font-weight: 550;
+          
     }
 
     .box1,
@@ -336,7 +337,10 @@ body {
         margin-top: -60px;
         font-size: 24px;
     }
-
+.welcome-section-item3{
+    width: 70%;
+    margin: auto;
+}
     video {
         display: none;
     }
@@ -365,12 +369,18 @@ body {
         width: 360px;
         height: 250px;
     }
-    
+    .welcome-section-item3{
+        width: 100%;
+   
+    }
 }
 
 @media (max-width:410px) {
     .footer {
         font-size: 17px;
+    }
+    .welcome-section-item3{
+        width: 100%;
     }
 
     .img1 {
