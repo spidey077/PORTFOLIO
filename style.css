@@ -373,8 +373,8 @@ body {
         width: 100%;
    
     }
-    .polygon,#social-link{
-        width: 100%;
+    body{
+        padding-right: 30px;
     }
     
 }
