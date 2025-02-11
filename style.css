@@ -1,4 +1,5 @@
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -8,12 +9,13 @@ body {
     margin: 0%;
     padding: 0%;
 }
+
 #projects {
     display: flex;
     flex-wrap: wrap;
-    gap:80px;
+    gap: 80px;
     justify-content: center;
-    padding:40px;
+    padding: 40px;
 }
 
 .project-item {
@@ -23,17 +25,19 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width:400px;
-    height:290px;
-    padding:50px auto;
+    width: 400px;
+    height: 290px;
+    padding: 50px auto;
     padding-bottom: 10px;
     transition: transform 0.6s ease, box-shadow 0.3s ease;
 }
+
 .project-item:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 
 }
+
 .project-image img {
     width: 100%;
     height: auto;
@@ -51,7 +55,7 @@ body {
     font-size: 1.3rem;
     margin: 10px 0;
     color: #000000;
-  
+
 }
 
 .off-screen-menu {
@@ -204,32 +208,38 @@ body {
     .polygon {
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 88%, 0 100%, 0% 60%, 0 0);
     }
-    .project-image{
+
+    .project-image {
         opacity: 0.83;
         transition: transform 0.5s ease, opacity 0.5s ease;
     }
+
     .project-tile h2 {
         opacity: 0.5;
         transition: opacity 0.5s ease, transform 0.9s ease;
     }
-    .project-item:hover .project-image{
+
+    .project-item:hover .project-image {
         transform: scale(1.1);
         opacity: 1;
     }
+
     .project-item:hover .project-tile h2 {
         opacity: 1;
-    
-        transform:translateY(15px);
+
+        transform: translateY(15px);
     }
-    
+
     #social-link {
         clip-path: polygon(73% 0, 100% 33%, 100% 100%, 0 100%, 0 31%);
         height: 230px;
         padding-top: 30px;
     }
-  .project-tile p{
-    display: none;
-  }
+
+    .project-tile p {
+        display: none;
+    }
+
     @keyframes typing {
         0% {
             width: 0%;
@@ -280,7 +290,7 @@ body {
         max-width: 800px;
         margin: auto;
         font-weight: 550;
-          
+
     }
 
     .box1,
@@ -296,7 +306,7 @@ body {
         margin: auto;
     }
 
- 
+
 
     .off-screen-menu,
     .hamburger-menu {
@@ -323,9 +333,11 @@ body {
     .project-tile p {
         display: none;
     }
-  .project-item .project-image img{
-    opacity: 1;
-  }
+
+    .project-item .project-image img {
+        opacity: 1;
+    }
+
     .welcome-section-item2 h1 {
         line-height: 60px;
         padding-top: 30px;
@@ -337,10 +349,12 @@ body {
         margin-top: -60px;
         font-size: 24px;
     }
-.welcome-section-item3{
-    width: 70%;
-    margin: auto;
-}
+
+    .welcome-section-item3 {
+        width: 70%;
+        margin: auto;
+    }
+
     video {
         display: none;
     }
@@ -362,45 +376,46 @@ body {
     #navbar {
         background-color: transparent !important;
     }
-    
+
 }
+
 @media (max-width:490px) {
-    .project-item{
+    .project-item {
         width: 360px;
         height: 250px;
     }
-    .welcome-section-item3{
+
+    .welcome-section-item3 {
         width: 100%;
-   
+
     }
-    body{
-        padding-right: -30px;
-    }
-    
 }
 
 @media (max-width:410px) {
     .footer {
         font-size: 17px;
     }
-    .welcome-section-item3{
+
+    .welcome-section-item3 {
         width: 100%;
     }
 
     .img1 {
         transform: scale(0.9);
     }
-    #welcome-section{
+
+    #welcome-section {
         margin-top: -60px;
     }
-    .project-item{
+
+    .project-item {
         width: 360px;
         height: 220px;
     }
-   .project-item .project-tile h2{
-      margin-bottom:60px;
+
+    .project-item .project-tile h2 {
+        margin-bottom: 60px;
     }
-    
 }
 
 @keyframes pulse {
@@ -559,7 +574,9 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    width:190px; transform: translateY(15px); padding: 20px;
+    width: 190px;
+    transform: translateY(15px);
+    padding: 20px;
 }
 
 #social-link {
@@ -571,7 +588,7 @@ body {
     background-color: black;
     height: 230px;
     padding-top: 30px;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 #welcome-section {
@@ -681,9 +698,21 @@ svg text {
     display: block;
     opacity: 1;
 }
-video{
-    position: absolute; top: 0; left: 0; object-fit: cover; width: 100%; height: 100%; z-index: -100;
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
 }
-.polygon{
-    position: relative;background-color: rgb(22, 22, 22);padding-top: 60px; height:1050px;margin-bottom:40px;
+
+.polygon {
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    padding-top: 60px;
+    height: 1050px;
+    margin-bottom: 40px;
 }
