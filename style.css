@@ -1,9 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-*{
-    margin-right: -20px;
-}
+
 body {
     font-family: League Spartan, sans-serif;
     transition: transform 0.3s ease;
@@ -376,7 +374,7 @@ body {
    
     }
     .polygon,#social-link{
-        padding-right: 1000px;
+        padding-right:50px;
     }
     
 }
