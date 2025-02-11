@@ -200,7 +200,7 @@ body {
     }
 }
 
-@media (min-width:900px) {
+@media (min-width:1200px) {
     .polygon {
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 88%, 0 100%, 0% 60%, 0 0);
     }
@@ -304,7 +304,7 @@ body {
 
 }
 
-@media (max-width:899px) {
+@media (max-width:1199px) {
     .polygon {
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 76% 94%, 0 100%, 0% 60%, 0 0);
     }
