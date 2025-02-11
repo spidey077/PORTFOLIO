@@ -207,6 +207,7 @@ body {
 @media (min-width:1200px) {
     .polygon {
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 88%, 0 100%, 0% 60%, 0 0);
+        margin-top: -27px;
     }
 
     .project-image {
