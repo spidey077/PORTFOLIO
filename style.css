@@ -389,8 +389,13 @@ body {
         width: 100%;
         padding-right:30px;
     }
+    #social-link,.polygon {
+        padding-right:30px;
 }
-
+.scroll-indicator,.welcome-section-item2,.welcome-section-item1,.img1,.footer{
+    margin-right: -30px;
+}
+}
 @media (max-width:410px) {
     .footer {
         font-size: 17px;
