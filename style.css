@@ -363,6 +363,9 @@ body {
     .project-tile h2 {
         font-size: 20px;
     }
+    #welcome-section{
+        margin-top: -60px;
+    }
 }
 
 @keyframes pulse {
