@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: League Spartan, sans-serif;
     transition: transform 0.3s ease;
@@ -373,6 +372,10 @@ body {
         width: 100%;
    
     }
+    .polygon,#social-link{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width:410px) {
@@ -396,6 +399,7 @@ body {
    .project-item .project-tile h2{
       margin-bottom:60px;
     }
+    
 }
 
 @keyframes pulse {
