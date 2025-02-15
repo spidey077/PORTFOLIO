@@ -16,6 +16,8 @@ body {
     gap: 80px;
     justify-content: center;
     padding: 40px;
+    margin-bottom: -100px;
+    padding-top: 130px;
 }
 
 .project-item {
@@ -210,6 +212,10 @@ body {
         margin-top: -27px;
     }
 
+    .polygon2 {
+        clip-path: polygon(73% 25%, 100% 35%, 100% 97%, 73% 90%, 0 97%, 0% 60%, 0 35%);
+    }
+
     .project-image {
         opacity: 0.83;
         transition: transform 0.5s ease, opacity 0.5s ease;
@@ -313,12 +319,26 @@ body {
     .hamburger-menu {
         display: none;
     }
-
+  .top-right{
+  margin-left:120px;
+  }
+  .top-left{
+    margin-right:120px;
+  }
+ 
 }
 
 @media (max-width:1199px) {
     .polygon {
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 76% 94%, 0 100%, 0% 60%, 0 0);
+    }
+
+    .polygon2 {
+        clip-path: polygon(71% 29%, 100% 35%, 100% 97%, 73% 94%, 0 97%, 0% 60%, 0 35%);
+    }
+
+    .form-container {
+        padding-top: 200px;
     }
 
     #social-link {
@@ -352,7 +372,7 @@ body {
     }
 
     .welcome-section-item3 {
-        width:80%;
+        width: 80%;
         margin: auto;
         margin-top: -20px;
     }
@@ -371,7 +391,7 @@ body {
         display: block;
         position: absolute;
         right: 10px;
-        padding-top: 10px;
+        padding-top:-10px;
         background-color: transparent;
     }
 
@@ -389,15 +409,23 @@ body {
 
     .welcome-section-item3 {
         width: 100%;
-        padding-right:30px;
+        padding-right: 30px;
     }
-    #social-link,.polygon {
-        padding-right:30px;
+
+    #social-link,
+    .polygon {
+        padding-right: 30px;
+    }
+
+    .scroll-indicator,
+    .welcome-section-item2,
+    .welcome-section-item1,
+    .img1,
+    .footer {
+        margin-right: -30px;
+    }
 }
-.scroll-indicator,.welcome-section-item2,.welcome-section-item1,.img1,.footer{
-    margin-right: -30px;
-}
-}
+
 @media (max-width:410px) {
     .footer {
         font-size: 17px;
@@ -504,12 +532,12 @@ body {
 .top-middle {
     display: flex;
     justify-content: space-between;
-    width: 270px;
+    width:500px;
 }
 
 .top-right {
     margin-bottom: 5px;
-    padding-right: 10px;
+    padding-right:20px;
 
 }
 
@@ -531,7 +559,7 @@ body {
 
 .top {
     font-weight: bold;
-    width: 540px;
+    width:800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -592,13 +620,13 @@ body {
     color: aqua;
     text-align: center;
     font-size: larger;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     height: 230px;
     padding-top: 30px;
     margin-top: 100px;
 }
 
-#welcome-section {
+#welcome-section,#form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -722,4 +750,190 @@ video {
     padding-top: 60px;
     height: 1050px;
     margin-bottom: 40px;
+}
+
+.polygon2 {
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    height: 1000px;
+    padding-top: 400px;
+}
+
+.form-container {
+    margin-top: 90px;
+    background: rgb(22, 22, 22);
+    padding: 70px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border:2px solid aqua;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+input:focus,
+textarea:focus {
+    border-color: white;
+    box-shadow: 0px 0px 24px rgba(0, 255, 255, 0.6);
+    outline: none;
+    transform: scale(1.02);
+}
+
+textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.button {
+    width: 108%;
+    background: aqua;
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: rgba(0, 255, 255, 0.85);
+    transform: scale(1.05);
+}
+.form{
+    padding-bottom: 140px;
+}
+
+@media(max-width: 600px) {
+    .form-container {
+        width: 85%;
+        /* Increased width for better usability */
+        max-width: 320px;
+        /* Slightly larger than before */
+        margin-top: 100px;
+        padding: 80px;
+        /* More padding for spacing */
+        box-sizing: border-box;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        /* More comfortable input field */
+        margin: 12px 0;
+        font-size: 15px;
+        /* Slightly larger for readability */
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 20px;
+        /* Better heading size */
+    }
+
+    .button {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1198px) {
+    .form-container {
+        margin-top:60px;
+    }
+}
+#skills {
+    display: flex;
+    gap:60px;  /* Space between icons */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  /* Ensures responsiveness */
+    max-width: 90%;
+    margin: auto;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill img {
+    margin-top:300px;
+    width: 120px;  /* Larger size for better visibility */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill p {
+    margin-top: 10px;
+    font-size: 20px;  /* Bigger text */
+    font-weight: bold;
+    color: #ffffff;  /* Darker text for contrast */
+}
+
+/* Hover effect */
+.skill img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width:950px) {
+    #skills {
+        gap: 20px;
+    }
+    
+    .skill img {
+        width:110px;  /* Slightly smaller for mobile */
+    }
+
+    .skill p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:716px) {
+    #skills {
+        flex-direction: column;
+    }
+
+    .skill img {
+     margin-top:40px;
+        width: 80px;
+    }
+
+    .skill p {
+        font-size: 16px;
+    }
 }
