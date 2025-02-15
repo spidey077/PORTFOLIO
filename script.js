@@ -52,41 +52,31 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     let form = document.getElementById("contactForm");
-    let formContainer = document.querySelector(".form-container");
-
-    // Check if user already submitted
-    if (localStorage.getItem("formSubmitted")) {
-        formContainer.innerHTML = "<p style='color:white;'>You have already submitted the form.</p>";
-        return; // Stop execution
-    }
-
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault();
 
         let name = document.getElementById("name").value;
-        let email = document.getElementById("class").value; // Matches the HTML ID
+        let email = document.getElementById("class").value;
         let message = document.getElementById("message").value;
 
         let googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe5WtKSocaImSu56wnNyuVtRB1H91pI95C1crh574vC2rs6Cg/formResponse";
         const formData = new FormData();
 
-        formData.append("entry.1129277712", name);  // Name field
-        formData.append("entry.915948538", email); // Email field
-        formData.append("entry.1842848848", message); // Message field
-
+        formData.append("entry.1129277712", name);
+        formData.append("entry.915948538", email);
+        formData.append("entry.1842848848", message);
         fetch(googleFormUrl, {
             method: "POST",
             mode: "no-cors",
             body: formData
         }).then(() => {
-            // Store in localStorage to prevent resubmission
-            localStorage.setItem("formSubmitted", "true");
+            form.reset();
+            window.location.href = "index.html";
 
-            // Show success message and disable form
-            formContainer.innerHTML = "<p style='color:white;'>Your response has been submitted successfully!</p>";
+        }).catch(error => {
+            alert("Error submitting form. Please try again.");;
         });
     });
 });
-
 
 
