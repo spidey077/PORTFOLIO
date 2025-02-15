@@ -828,15 +828,12 @@ textarea {
     padding-bottom: 140px;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .form-container {
         width: 85%;
-        /* Increased width for better usability */
         max-width: 320px;
-        /* Slightly larger than before */
         margin-top: 100px;
         padding: 80px;
-        /* More padding for spacing */
         box-sizing: border-box;
     }
 
@@ -845,16 +842,13 @@ textarea {
         width: 100%;
         max-width: 100%;
         padding: 20px;
-        /* More comfortable input field */
         margin: 12px 0;
         font-size: 15px;
-        /* Slightly larger for readability */
         box-sizing: border-box;
     }
 
     h2 {
         font-size: 20px;
-        /* Better heading size */
     }
 
     .button {
@@ -866,18 +860,18 @@ textarea {
     }
 }
 
-
 @media (min-width: 601px) and (max-width: 1198px) {
     .form-container {
-        margin-top:60px;
+        margin-top: 60px;
     }
 }
+
 #skills {
     display: flex;
-    gap:60px;  /* Space between icons */
+    gap: 60px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;  /* Ensures responsiveness */
+    flex-wrap: wrap;
     max-width: 90%;
     margin: auto;
 }
@@ -890,32 +884,30 @@ textarea {
 }
 
 .skill img {
-    margin-top:300px;
-    width: 120px;  /* Larger size for better visibility */
+    margin-top: 300px;
+    width: 120px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
 .skill p {
     margin-top: 10px;
-    font-size: 20px;  /* Bigger text */
+    font-size: 20px;
     font-weight: bold;
-    color: #ffffff;  /* Darker text for contrast */
+    color: #ffffff;
 }
 
-/* Hover effect */
 .skill img:hover {
     transform: scale(1.2);
 }
 
-/* Responsive design for smaller screens */
-@media (max-width:950px) {
+@media (max-width: 950px) {
     #skills {
         gap: 20px;
     }
-    
+
     .skill img {
-        width:110px;  /* Slightly smaller for mobile */
+        width: 110px;
     }
 
     .skill p {
@@ -923,17 +915,21 @@ textarea {
     }
 }
 
-@media (max-width:716px) {
+@media (max-width: 716px) {
     #skills {
         flex-direction: column;
     }
 
     .skill img {
-     margin-top:40px;
+        margin-top: 40px;
         width: 80px;
     }
 
     .skill p {
         font-size: 16px;
+    }
+
+    .polygon2 {
+        padding-bottom: 20px;
     }
 }
