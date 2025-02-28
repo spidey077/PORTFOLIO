@@ -1,7 +1,7 @@
 
 window.addEventListener("scroll", function () {
     let scrollIndicator = document.getElementById("scrollIndicator");
-    if (window.scrollY > 40) {
+    if (window.scrollY > 10) {
         scrollIndicator.classList.add("hidden");
     } else {
         scrollIndicator.classList.remove("hidden");
