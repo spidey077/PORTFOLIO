@@ -838,6 +838,9 @@ textarea {
 }
 
 @media (max-width: 600px) {
+    .polygon{
+        height:770px;
+    }
     .form-container {
         width: 85%;
         max-width: 320px;
