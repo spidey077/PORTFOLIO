@@ -1,7 +1,7 @@
 
 window.addEventListener("scroll", function () {
     let scrollIndicator = document.getElementById("scrollIndicator");
-    if (window.scrollY > 60) {
+    if (window.scrollY > 40) {
         scrollIndicator.classList.add("hidden");
     } else {
         scrollIndicator.classList.remove("hidden");
@@ -41,7 +41,7 @@ document.addEventListener("click", function (event) {
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", function () {
     let scrollY = window.scrollY;
-    if (scrollY > 950) {
+    if (scrollY >600) {
         hamburger.classList.add("hidden");
         navbar.classList.add("hidden");
     } else {
