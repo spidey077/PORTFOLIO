@@ -17,7 +17,7 @@ body {
     justify-content: center;
     padding: 40px;
     margin-bottom: -100px;
-    padding-top: 130px;
+    padding-top: 150px;
 }
 
 .project-item {
@@ -413,6 +413,7 @@ body {
     .project-item {
         width: 360px;
         height: 250px;
+        
     }
 
     .welcome-section-item3 {
@@ -929,8 +930,9 @@ textarea {
     }
 
     .skill img {
-        margin-top: 40px;
+        margin-top:80px;
         width: 80px;
+
     }
 
     .skill p {
@@ -938,6 +940,8 @@ textarea {
     }
 
     .polygon2 {
-        height:1000px;
+        height:1200px;
+        padding-top: 450px;
+        margin-top: -330px;
     }
 }
