@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         let name = document.getElementById("name").value;
-        let email = document.getElementById("class").value;
+        let email = document.getElementById("email").value;
         let message = document.getElementById("message").value;
 
         let googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe5WtKSocaImSu56wnNyuVtRB1H91pI95C1crh574vC2rs6Cg/formResponse";
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "index.html";
 
         }).catch(error => {
-            alert("Error submitting form. Please try again.");;
+            alert("Error submitting form. Please try again.");
         });
     });
 });
