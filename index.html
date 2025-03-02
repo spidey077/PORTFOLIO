@@ -182,13 +182,14 @@
         <div class="fade-In" id="form">
             <div class="form-container">
                 <h2>Contact</h2>
-                <form method="POST">
-                    <input type="hidden" name="form-name" value="contact" />
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />       
                     <input type="text" name="name" id="name" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="message" id="message" placeholder="Project Details" required></textarea>
+                    <textarea name="message" id="message" placeholder="Project Details" required></textarea> 
                     <button class="button" type="submit">Submit</button>
                 </form>
+                
             </div>
         </div>
     </div>
