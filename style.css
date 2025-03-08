@@ -66,7 +66,8 @@ body {
     left: -280px;
     width: 280px;
     height: 100vh;
-    background: linear-gradient(135deg, black 20%, #474747 100%);
+    background:  #1a1a1a ;
+
     backdrop-filter: blur(10px);
     transition: left 0.4s ease-in-out;
     z-index: 1000;
@@ -258,6 +259,7 @@ body {
         padding-top: 25px;
         padding-bottom: 10px;
         display: inline-block;
+   
     }
 
     .welcome-section-item1 {
@@ -574,7 +576,7 @@ body {
 
 #services {
     clip-path: polygon(0 0, 25% 20%, 100% 0%, 100% 100%, 0 100%);
-    background: linear-gradient(135deg, black 20%, #474747 100%);
+    background:  #1a1a1a ;
 }
 
 .social {
@@ -593,7 +595,8 @@ body {
     color: aqua;
     text-align: center;
     font-size: larger;
-    background: linear-gradient(135deg, black 20%, #474747 100%);
+    background:  #1a1a1a ;
+
 
 
 
@@ -644,7 +647,8 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(135deg, black 20%, #474747 100%);
+    background:  #1a1a1a ;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,13 +726,15 @@ video {
 
 .polygon {
     position: relative;
-    background: linear-gradient(135deg, black 20%, #474747 100%);
+    background:  #1a1a1a ;
+
    
 }
 
 .polygon2 {
     position: relative;
-    background: linear-gradient(135deg, black 20%, #474747 100%);
+    background:  #1a1a1a ;
+
 
 }
 
