@@ -10,8 +10,6 @@ window.addEventListener("scroll", function () {
 document.getElementById("scrollIndicator").addEventListener("click", function () {
     window.scrollTo({ top: 1050, behavior: "smooth" });
 });
-
-
 window.addEventListener("load", function () {
     const loadingScreen = document.getElementById("loading-screen");
     const content = document.getElementById("content");
@@ -22,22 +20,20 @@ window.addEventListener("load", function () {
         }, 1000);
     }, 500);
 });
-
-
-
 const hamburger = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".off-screen-menu");
-document.addEventListener("click", function () {
+const menuLinks = document.querySelectorAll(".off-screen-menu a");
+hamburger.addEventListener("click", function (event) {
     menu.classList.toggle("active");
     hamburger.classList.toggle("active");
+    event.stopPropagation();
 });
-document.addEventListener("click", function (event) {
-    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+menuLinks.forEach(link => {
+    link.addEventListener("click", function () {
         menu.classList.remove("active");
         hamburger.classList.remove("active");
-    }
+    });
 });
-
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", function () {
     let scrollY = window.scrollY;
