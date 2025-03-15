@@ -293,9 +293,10 @@ body {
     .hamburger-menu {
         display: none;
     }
-  .top-right{
+  .top-right a{
   margin-left:120px;
   }
+  
   .top-left{
     margin-right:120px;
   }
@@ -325,10 +326,7 @@ body {
         height: 230px;
     }
 
-    .top-right button a {
-        display: block;
-    }
-
+   
     .project-tile p {
         display: none;
     }
