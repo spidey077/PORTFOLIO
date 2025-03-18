@@ -92,7 +92,7 @@ body {
 
 .hamburger-menu {
     position: fixed;
-    top: 20px;
+    top:30px;
     left: 20px;
     cursor: pointer;
     z-index: 1100;
@@ -458,18 +458,19 @@ body {
 }
 
 #navbar {
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    height: 60px;
-    position: fixed;
+    height:70px;
+    position:fixed;
     top: 0%;
     right: 0%;
     left: 0%;
     z-index: 100;
     padding-bottom: 10px;
     padding: 20px;
+    transition: background-color 0.3s ease-in-out;
 }
-
+#navbar.scrolled {
+    background-color: rgb(12, 12, 12) !important;
+}
 .top-middle-items {
     position: relative;
     color: white;
@@ -503,6 +504,7 @@ body {
     display: flex;
     justify-content: space-between;
     width:500px;
+    font-weight: 600;
 }
 
 .top-right {
@@ -633,11 +635,6 @@ body {
 .top-left img {
     transition: transform 0.4s;
 }
-
-.top-left img:hover {
-    transform: scale(1.3);
-}
-
 #loading-screen {
     position: fixed;
     width: 100vw;
@@ -913,4 +910,22 @@ textarea {
         margin-top: -330px;
     }
 }
+html.lenis {
+	height: auto;
+}
 
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}
