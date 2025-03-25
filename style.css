@@ -24,14 +24,13 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 400px;
     height: 290px;
     padding: 50px auto;
     padding-bottom: 10px;
-    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    transition: transform 0.6s ease, box-shadow 1s ease-in-out;
 }
 
 .project-item:hover {
@@ -223,22 +222,20 @@ body {
 
     .project-image {
         opacity: 0.83;
-        transition: transform 0.5s ease, opacity 0.5s ease;
+        transition: transform 0.8s ease, opacity 1s ease;
     }
 
     .project-tile h2 {
         opacity: 0.5;
-        transition: opacity 0.5s ease, transform 0.9s ease;
+        transition: opacity 1s ease, transform 1.1s ease;
     }
-
     .project-item:hover .project-image {
-        transform: scale(1.1);
+        transform: scale(1.2);
         opacity: 1;
     }
 
     .project-item:hover .project-tile h2 {
         opacity: 1;
-
         transform: translateY(15px);
     }
 
@@ -251,7 +248,6 @@ body {
     .project-tile p {
         display: none;
     }
-
 
 
     .middle-text {
