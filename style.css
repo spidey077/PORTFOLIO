@@ -816,6 +816,12 @@ textarea {
     video{
         display: none;
     }
+    .top-button {
+        transform: scale(1.15);
+    background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+    }
     .polygon{
         height:770px;
     }
