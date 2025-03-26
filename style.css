@@ -212,6 +212,7 @@ body {
         padding-top: 60px;
         height: 1050px;
         margin-bottom: 40px;
+        
     }
 
     .polygon2 {
@@ -523,7 +524,10 @@ transition: width 0.6s ease,height 0.6s ease,background-color 0.3s ease;
 
 .top-button:hover {
     cursor: pointer;
-    transform: scale(1.15)
+    transform: scale(1.15);
+background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .top-button {
@@ -531,10 +535,10 @@ transition: width 0.6s ease,height 0.6s ease,background-color 0.3s ease;
     font-size: small;
     color: black;
     background-color: aqua;
-    border: none;
+    border: 2px solid aqua;
     font-weight: bold;
     border-radius: 3px;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
 }
 
 .top {
@@ -582,6 +586,7 @@ transition: width 0.6s ease,height 0.6s ease,background-color 0.3s ease;
 #services {
     clip-path: polygon(0 0, 25% 20%, 100% 0%, 100% 100%, 0 100%);
     background:  #1a1a1a ;
+
 }
 
 .social {
@@ -808,6 +813,9 @@ textarea {
 }
 
 @media (max-width: 600px) {
+    video{
+        display: none;
+    }
     .polygon{
         height:770px;
     }
