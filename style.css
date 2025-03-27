@@ -716,15 +716,6 @@ svg text {
     opacity: 1;
 }
 
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-}
 
 .polygon {
     position: relative;
@@ -810,14 +801,7 @@ textarea {
 }
 
 @media (max-width: 600px) {
-    video{
-        position: fixed;
-        visibility: hidden;
-        display: none;
-        height: 0;
-        width: 0;
-        z-index: 0;
-    }
+   
     .top-button {
         transform: scale(1.15);
     background-color: rgba(0, 0, 0, 0);
