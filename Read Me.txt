@@ -1,0 +1,65 @@
+# 🌐 Imdadullah's Developer Portfolio
+
+A personal portfolio website showcasing my web development projects, skills, and contact information.
+
+🔗 **Live Site:** [imdadullah.netlify.app](https://imdadullah.netlify.app/)
+
+---
+
+## 📌 Overview
+
+This is my personal developer portfolio built using HTML, CSS, and JavaScript.  
+It presents an overview of who I am, the projects I've created, and how to get in touch with me.
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+- GitHub
+- Netlify (for deployment)
+
+---
+
+## 💡 Features
+
+- 👤 About Me Section
+- 🛠 Showcased Projects with Links
+- 📱 Responsive Layout (Mobile-Friendly)
+- 📫 Contact Information with Links
+- 🧑‍💻 Clean and Simple UI/UX
+
+---
+
+## 📷 Screenshots
+
+![Portfolio Screenshot](screenshot.png) <!-- You can replace this with an actual image or upload it -->
+
+---
+
+## 🚀 Deployment
+
+Deployed using [Netlify](https://netlify.com).  
+To view the website live: [Click here](https://imdadullah.netlify.app/)
+
+---
+
+## 📬 Contact
+
+Want to get in touch?
+
+- Email: `imdadullahchishti@gmail.com`
+- GitHub: [spidey077](https://github.com/spidey077)
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for learning or inspiration.
+
+---
+
+> Built and designed with ❤️ by Imdadullah
